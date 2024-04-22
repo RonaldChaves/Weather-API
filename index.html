@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/global.css">
+
+    <!-- JS -->
+    <script src="assets/scripts/index.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Weather NOW</title>
+
+</head>
+
+<body>
+
+
+    <div class="bg-container">
+
+        <nav class="navbar">
+            <div class="navbar-content">
+                <h3 class="search-title">Encontre o clima da cidade:</h3>
+                <div class="search-container">
+
+                    <input type="text" placeholder="Digite o nome da cidade" id="input-city">
+                    <button id="search">
+                        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="weather disabled">
+
+            <div class="weather-info">
+
+                <h3 class="city-name">
+
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="name-city">Rio de Janeiro</span>
+                    <img id="badge" src="https://flagsapi.com/KH/flat/32.png" alt="Country Badge" class="badge" >
+                </h3>
+
+            </div>
+
+            <div class="weather-main">
+
+                <p id="temp">
+                    <span class="temp">30</span>&deg;C
+                </p>
+
+                <p>
+                    Min: <span id="min-temp">10</span>&deg;C
+                    |
+                    Max: <span id="max-temp">30</span>&deg;C
+                </p>
+
+                <p class="descripition">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Condition" class="weather-icon">
+                    <span id="description">Nublado</span>
+                </p>
+
+            </div>
+
+            <div class="weather-details">
+
+                <p class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">48</span>%
+                </p>
+                |
+                <p class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="wind">2</span>km/h
+                </p>
+
+            </div>
+
+        </section>
+
+
+        
+    </div>
+
+
+</body>
+
+</html>
