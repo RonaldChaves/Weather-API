@@ -1,7 +1,4 @@
 
-const API_Key = "b1523a2fd9d105b4629c13a7eeedd7d6";
-// const API_Image = "SkNTIGr4hXBAqLd6ZcSTTSI2T3iHfIEph60ffH38IN3HilY8IXpjZ1aD";
-
 const inputCity = document.querySelector('#input-city');
 const searchBtn = document.querySelector('#search');
 
